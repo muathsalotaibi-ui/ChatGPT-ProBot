@@ -1,5 +1,7 @@
-import resolve from '@rollup/plugin-node-resolve';
+import { nodeResolve } from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
+import terser from '@rollup/plugin-terser';
+import json from "@rollup/plugin-json";
 
 export default {
   input: 'index.js',
@@ -8,7 +10,9 @@ export default {
     format: 'cjs',
   },
   plugins: [
-    resolve({ preferBuiltins: true, }),
+    json(),
+    nodeResolve({ preferBuiltins: true }),
     commonjs(),
+    terser()
   ],
 }

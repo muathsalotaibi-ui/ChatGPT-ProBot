@@ -20,14 +20,16 @@
     "test": "jest"
   },
   "dependencies": {
-    "@oceanlvr/chatgpt": "^1.0.5",
+    "@oceanlvr/chatgpt": "^2.0.0",
     "probot": "^12.2.4",
     "probot-commands-pro": "^1.0.1"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.33.1",
     "@rollup/plugin-commonjs": "^23.0.3",
+    "@rollup/plugin-json": "^5.0.2",
     "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-terser": "^0.2.0",
     "eslint": "^8.29.0",
     "jest": "^29.0.0",
     "nock": "^13.0.5",
